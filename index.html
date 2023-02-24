@@ -1,23 +1,341 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <style>
-    i {
-      font-size: 250px;
-      color: rgb(8 212 8);
-    }
-  </style>
+  <head>
+    <!-- Metadatos info -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Fabrizio Santi">
+    <meta name="description" content="Protecto de Bootstrap">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, Bootstrap, Git, GitHub">
+    <!-- Metadatos General -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>Proyecto</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/Proyecto.ico">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg- navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/Proyecto.png" alt="Logo de la página web" width="70px">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-</head>
-<body>
-  <i class="bi bi-android2"></i>
-</body>
+    <!-- Section Hero -->
+    <section class="hero align-item-stretch">
+      <div class="hero-principal">
+        <img class="hero-imagen-desarrollador"  src="imagenes/Logo.png" alt="Imagen de perfil">
+        <h1>Hola, soy Fabrizio</h1>
+        <h2>Proyecto realizado para practicar Bootstrap</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid"  src="imagenes/Conocimiento.png" alt="Laptop, pc, HTML, Js, CSS, React, Git y GitHub">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Fabrizio</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia recusandae beatae autem esse aperiam fuga necessitatibus suscipit sequi voluptatem maiores explicabo corporis possimus vel numquam minus a dolores, quod minima. Dolorum a quia nulla quasi exercitationem eligendi cum illo ea, repellat saepe corporis rem nesciunt dolores mollitia velit culpa sed quod adipisci provident nostrum hic recusandae est vero neque. Quod necessitatibus saepe impedit id in sequi a iusto.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+              <i class="bi bi-laptop"></i>
+              <p class="experiencia-titulo">Desarrollo Web</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae sit, facilis error aliquam architecto nobis expedita dolorum et in.</p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">HTML</span>
+                <span class="badge text-bg-primary">CSS</span>
+                <span class="badge text-bg-primary">JavasScript</span>
+                <span class="badge text-bg-primary">React</span>
+              </div>
+          </div>
+          <!-- Edicion de imagenes y videos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-collection-play"></i>
+            <p class="experiencia-titulo">Diseño</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae sit, facilis error aliquam architecto nobis expedita dolorum et in.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Imagenes</span>
+              <span class="badge text-bg-primary">Videos</span>
+              <span class="badge text-bg-primary">Presentaciones</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-book"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae sit, facilis error aliquam architecto nobis expedita dolorum et in.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">fCC</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Habilidades</span>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+      <h3 class="seccion-descripcion">Estos son algunos de mis proyectos: </h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="imagenes/proyecto1.png" alt="Proyecto1">
+                <div class="overlay">
+                  <p>Proyecto 1</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="imagenes/proyecto2.png" alt="Proyecto1">
+                <div class="overlay">
+                  <p>Proyecto 2</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="imagenes/proyecto3.png" alt="Proyecto1">
+                <div class="overlay">
+                  <p>Proyecto 3</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="imagenes/proyecto4.png" alt="Proyecto1">
+                <div class="overlay">
+                  <p>Proyecto 4</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="imagenes/proyecto5.png" alt="Proyecto1">
+                <div class="overlay">
+                  <p>Proyecto 5</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="imagenes/proyecto6.png" alt="Proyecto1">
+                <div class="overlay">
+                  <p>Proyecto 6</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                    <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+        Ver más proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo">Artículos</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+
+          <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          </a>
+
+          <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          </a>
+
+          <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+          </a>
+
+          <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti tempore maxime qui.</li>
+          </a>
+
+          <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur.</li>
+          </a>
+        </ul>
+      </div>
+      <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+        Ver más artículos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <div id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo text-center">Testimonios</h2>
+      <h3 class="seccion-descripcion text-center">Estos son algunos testimonios de mis clientes:</h3>
+
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img src="imagenes/cliente1.svg" alt="1ra foto de Testimonio" class="testimonio-imagen rounded-circle">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa tempora iure optio veritatis numquam magnam nulla sunt reiciendis voluptas.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Gino</p>
+                <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="imagenes/cliente2.svg" alt="2da foto de Testimonio" class="testimonio-imagen rounded-circle">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus hic pariatur odio veniam blanditiis error.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Elsa</p>
+                <p class="cargo">Gerente de AprendeAProgramar</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="imagenes/cliente3.svg" alt="3ra foto de Testimonio" class="testimonio-imagen rounded-circle">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquid tempora dicta dignissimos esse mollitia, exercitationem doloremque. Temporibus iure eveniet a?</p>
+              <div class="testimonio-info">
+                <p class="cliente">Marcos</p>
+                <p class="cargo">Gerente de DiseñaMiPáginaWeb<p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Contacto -->
+    <section class="contacto seccion-oscura" id="contacto">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:PruebaNoExiste@micorreo.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-at-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="imagenes/Logo.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com/Jonas62837530" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://github.com/Santi2007939" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/fabrizio-alonso-santi-guerrero-562a3125a/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:PruebaNoExiste@micorreo.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Fabrizio Santi (2023) &#169</div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
